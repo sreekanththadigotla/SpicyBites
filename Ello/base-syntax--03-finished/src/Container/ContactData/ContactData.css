@@ -1,0 +1,98 @@
+.Personal {
+    display: flex;
+    align-content: space-between;
+     margin: 10px;
+     padding: 1px;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: scroll;
+    height: 90vh;
+    width: 60%;
+    margin: 10px auto;
+    box-shadow: 1px 1px 5px 3px rgb(0, 0, 0);
+    background-color: transparent;
+    background-size: 100%;
+    background-position: center;
+    backdrop-filter:brightness(50%) blur(5px);
+
+}
+
+
+.PersonalD{
+  height: 93vh;
+  width: 100vw;
+  
+  display: inline-block;
+  /* background-color: brown; */
+  background-image: linear-gradient(rgba(255, 84, 5, 0.986), rgba(255, 230, 9, 0.986)),url('../../Assets/r1.jpg');
+  background-size: cover;
+  background-blend-mode: hue;
+  /* filter: blur(1px); */
+  /* margin-top: -1rem; */
+  
+}
+
+@media screen and (max-width:1000px)
+{
+  .Personal{
+   width: 80%;
+  }
+}
+@media screen and (max-width:700px)
+{
+  .Personal{
+   width: 90%;
+  }
+}
+.Personal::-webkit-scrollbar {
+    width: none;
+    color: transparent;
+}
+
+.d{
+     font-size: 1.8rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+     text-transform: uppercase;
+     margin: 0 auto;
+     background-image:linear-gradient(to right,rgb(255, 0, 0),rgb(94, 255, 0));
+    
+     -webkit-background-clip: text;
+     background-clip: text;
+     color: transparent;
+  
+}
+.ss{
+  color: red;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.CS{
+  margin-top: 10px;
+  padding: 1rem;
+  width: 40%;
+  background-color: green;
+  color: white;
+  margin: 0 auto;
+  box-shadow: 0px 0px 4px 1px rgb(10, 212, 10);
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.CS:active{
+  transform: translateY(-2px);
+  box-shadow: 0px 0px 3px .5px rgb(10, 212, 10);
+  cursor: pointer;
+}
+@media screen and (max-width:550px)
+{
+  .d{
+   
+   font-size: 1.3rem;
+  }
+  .PersonalInput{
+    width: 80%;
+    padding: .2rem 1rem;
+  }
+}
