@@ -58,4 +58,4 @@ import reduer from '../reducers/MenuIngrediets';
 
   }
 
-  export default reducer;
+  export default    reducer;

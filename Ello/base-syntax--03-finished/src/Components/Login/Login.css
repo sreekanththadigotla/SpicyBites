@@ -13,8 +13,8 @@
 
 
 .LoginMiddle{
-    width: 35%;
-    height: 50%;
+    width: 40%;
+    height: auto;
     padding: 6rem;
     display: flex;
     flex-direction: column;
@@ -31,6 +31,7 @@
 @media screen and (max-width:1000px){
     .LoginMiddle{
         width: 50%;
+        font-size: 6px;
     }
 }
 
@@ -78,7 +79,7 @@
 }
 
 
-.rr{
+.rr{ 
     color: red;
     font-weight: 1rem;
 }
@@ -92,6 +93,7 @@
 .PP   { 
     width: 80%;
     outline: none;
+    margin-bottom: 35px;
     border: none;
      background-color: white;
     font-size: 1.2rem;
@@ -127,6 +129,7 @@
 
 .PPP{
     width: 80%;
+    margin-bottom: 15px;
     outline: none;
     border: none;
      background-color: white;
@@ -159,6 +162,7 @@
     
     background-color:rgb(102, 255, 0);
     width: 80%;
+    margin: 15px auto;
     padding: .5rem 0;
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -219,3 +223,34 @@ button{
 
 
  
+@media screen and (max-width:1000px)
+{
+    .Log,.Log2
+    {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:500px)
+{
+    .Log,.Log2
+    {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:400px)
+{
+    .Log,.Log2
+    {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:250px)
+{
+    .Log,.Log2
+    {
+        font-size: 8px;
+    }
+}

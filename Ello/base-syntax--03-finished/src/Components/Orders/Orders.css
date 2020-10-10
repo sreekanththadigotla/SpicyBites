@@ -68,18 +68,21 @@
     font-size: 1.5rem; 
 }
 
+.Name{
+    margin: 1rem .2rem;
+}
 
 @media screen and (max-width:750px)
 {
     .MainMiddleCard{
-        width: 80%;
+        width: 85%;
     }
 }
 
 @media screen and (max-width:500px)
 {
     .MainMiddleCard{
-        width: 80%;
+        width: 89%;
         
     }
 }
@@ -87,7 +90,7 @@
 @media screen and (max-width:400px)
 {
     .MainMiddleCard{
-        width: 95%;
+        width: 99%;
      }
     .Name{
         font-size: 1rem;
@@ -106,13 +109,14 @@
 @media screen and (max-width:270px)
 {
     .MainMiddleCard{
-        width: 80%;
+        width: 100%;
+        margin: 10px auto;
      }
 }
 @media screen and (max-width:170px)
 {
     .MainMiddleCard{
-        width: 90%;
+        width: 100%;
      }
 }
 
@@ -136,14 +140,15 @@
 
 .SmallCard{
     
-    width: 60%;
+    width: 65%;
+    height: auto;
     background-color: rgb(253, 8, 8);
     border: 2px solid rgb(253, 8, 8);
     border-radius: 15px;
     display: flex;
-    height: 20%;
+    padding: 1rem .5rem;
     flex-shrink: 0;
-    padding: 0 1rem;
+    padding:  1rem .5rem;
     font-size: 1.1rem;
     font-size: 600;
     text-transform: capitalize;
@@ -159,14 +164,25 @@
 @media screen and (max-width:1100px)
 {
     .SmallCard{
-        width: 70%;
+        width: 75%;
     }
 }
 
 @media screen and (max-width:900px)
 {
     .SmallCard{
-        width: 85%;
+        width: 89%;
+        padding: .5rem .2rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:500px)
+{
+    .SmallCard{
+        width: 95%;
+        padding: .4rem .1rem;
+        font-size: .9rem;
     }
 }
 

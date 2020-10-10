@@ -2,10 +2,11 @@
     text-align: center;
     display: block;
     background-color: rgb(35, 35, 37);
-    display: block;
     height: auto;
-    width: 100vw;
-    color: white;
+    width: 100%;
+    margin: 0 auto;
+    color:rgb(54, 49, 49);
+    font-weight: 300;
     
     display: flex;
     /* justify-content: space-evenly; */
@@ -34,6 +35,7 @@
     letter-spacing: 2px;
     padding: .1rem;
     cursor: pointer;
+    color: white;
     display: inline-block;
     
 }
@@ -103,6 +105,8 @@
 .Portion{
     /* background-color: blue; */
     width: 60%;
+    top: 0;
+    position: sticky;
 
 }
 
@@ -159,7 +163,7 @@ ul{
     justify-content: space-evenly;
     list-style: none;
     font-size: inherit;
-    font-weight: 510;
+    font-weight: 10;
     text-transform: uppercase;
     padding-left: 0;
     margin-left: 0;
@@ -178,7 +182,7 @@ ul{
 
 li,a{
     text-decoration: none;
-    color: white;
+    color: rgb(194, 182, 182);
     cursor: pointer;
     flex-shrink: 1;
     /* width: 10%; */
@@ -186,7 +190,7 @@ li,a{
     /* display: inline-block; */
     height: 100%;
     /* padding: .7rem 1rem; */
-    letter-spacing: 1.5px;
+    letter-spacing: 2.5px;
      
     padding-left: 0;
    
@@ -294,12 +298,17 @@ li,a{
 
 
 .mys {
-    color: rgba(2, 255, 2, 0.911);
-    /* background-color: rgb(189, 50, 0); */
-    /* border: 2px solid orangered; */
+    color: rgb(2, 255, 2);
+    background-color: transparent;
     
+    border: 1px solid transparent;
+    position: sticky;
+    top: 0%;
+     padding-top: 6px;
+     padding-bottom: 6px;
+     border-top-color: rgba(255, 68, 0, 0.438);
     border-left-color: transparent;
     border-right-color: transparent;
     border-bottom-color: transparent;
     /* background-color: rgba(255, 0, 0, 0.548);2 */
-}
+}   

@@ -1,8 +1,6 @@
-import React, { Component } from  'react';
+import React from  'react';
 import axios from 'axios';
-import { Redirect, useHistory, Link, Route } from 'react-router-dom';
-import HeaderMaintain from '../../Container/HomePageMaintain/HeaderMaintain';
-
+ 
 
 export const authStarts = () =>{
 
@@ -18,6 +16,7 @@ export const authSucesss = (idToken,userId) =>{
         type:"AUTH_SUCESS",
         idToken:idToken,
         userId:userId
+        
     }
 
 }
@@ -53,6 +52,7 @@ export const logout = () =>
 
 export const auths = (Email, Password ,SignupIsTrue) =>{
    let mess="Incorrect username or password"
+   console.log(mess)
     return dispatch =>{
         dispatch(authStarts())
         console.log(Email,Password,SignupIsTrue)

@@ -131,7 +131,7 @@
     width : 37%;
     /* background-color: rgb(43, 179, 25); */
     margin: 20px auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     perspective: 3000px;
     /* margin-left: -1px; */
 }

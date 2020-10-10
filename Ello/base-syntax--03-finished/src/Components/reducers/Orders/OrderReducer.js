@@ -11,8 +11,7 @@ const initState = {
 
 
  const OrderReducer = (state=initState, action) =>
- {
-     
+ { 
  }
 
 export default OrderReducer;

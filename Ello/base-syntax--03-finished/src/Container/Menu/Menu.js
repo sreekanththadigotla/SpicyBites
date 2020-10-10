@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
 import classes from './Menu.css'
 import axios from 'axios';
@@ -6,11 +6,11 @@ import axios from 'axios';
 import Menudisplay from '../../Components/MenuDisplay/MenuDisplay';
 import Menuitems from '../../Components/MenuItems/MenuItems';
 import { connect } from 'react-redux';
-import { AddIngredients, RemoveIngredients,InitIngredients, InitIngredients1, InitIngredients2, InitIngredients3 } from '../../Components/actions/MenuIngredients';
+import { AddIngredients, RemoveIngredients, InitIngredients1, InitIngredients2, InitIngredients3 } from '../../Components/actions/MenuIngredients';
 
  
 
-class menuuu extends Component{
+class menuuu extends PureComponent{
 
     
    state={

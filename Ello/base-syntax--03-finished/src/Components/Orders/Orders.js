@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {  PureComponent } from 'react';
 import classes from './Orders.css'
 import { connect } from 'react-redux';
 import { FirstFetch } from './Action';
@@ -6,7 +6,7 @@ import{ init } from 'emailjs-com';
 init("user_gplDcWxu2SxXur4PkQ8s7");
 
  
-class Order extends Component{
+class Order extends PureComponent{
 
 componentDidMount()
 {

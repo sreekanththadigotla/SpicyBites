@@ -1,9 +1,13 @@
-import React, { Component } from 'react';
+/* eslint-disable no-unused-expressions */
+import React, {PureComponent } from 'react';
+import {  withRouter } from 'react-router-dom';
+import Context from '../../Container/AppIndex';
 import classes from './MenuDisplay.css';
 
-class Menudisplay extends Component{  
+class Menudisplay extends PureComponent{  
     TotalPrice = 0;
     price =0 ;
+    loginCheck=false;
 
      state = {
          displayDetails:this.props.displayDetails
@@ -16,12 +20,18 @@ class Menudisplay extends Component{
           this.setState({displayDetails: this.props.displayDetails});
         }
       }
+
+      loginGo=() =>
+      {
+        //  <Redirect to="/login"/>
+        console.log(this.props.history.push("/login"))
+      }
     render() 
     {  
 
-        const style = {
-            disabled:'disabled'
-              }
+        // const style = {
+        //     disabled:'disabled'
+        //       }
 
 
         console.log("props are")
@@ -69,14 +79,22 @@ class Menudisplay extends Component{
                 <div className={classes.PriceShow}> 
                 <div className={classes.F}>Total</div>
                  <div className={classes.Tot}>{ Math.abs(this.props.Total)}</div>  
+                 <Context.Consumer>
+                   {context =>{
+                     console.log(context)
+                     context.login===true ? this.loginCheck=true : this.loginCheck = false
+                   }
+                   }
+                 </Context.Consumer>
                 {
-                   this.state.displayDetails.length>0 ?  <div className={classes.Order} onClick={()=>this.props.ordered(this.props.displayDetails)}>OrderNow</div>
-                                                      :   null
+                   (this.loginCheck | this.state.displayDetails.length>0 && this.loginCheck)  ?  
+                                <div className={classes.Order} onClick={()=>this.props.ordered(this.props.displayDetails)}>OrderNow</div>
+                            :   <div className={classes.log} onClick={this.loginGo} > login </div>
                 }
                 </div>
                
             </div>
-       
+      
         )
 
     }
@@ -85,4 +103,4 @@ class Menudisplay extends Component{
 
 }
 
-export default Menudisplay;
+export default withRouter(Menudisplay);

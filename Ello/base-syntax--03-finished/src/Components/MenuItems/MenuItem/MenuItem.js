@@ -20,4 +20,4 @@ const menuItem = (props) =>(
 </div>
 );
 
-export default menuItem;
+export default React.memo (menuItem);

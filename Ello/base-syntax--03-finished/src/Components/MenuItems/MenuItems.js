@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import classes from './MenuItems.css';
 import MenuItem from './MenuItem/MenuItem';
 import Spinner from '../utility/Spinner/Spinner';
@@ -242,4 +242,4 @@ let crp ="Extra"
 
      </div>
 }
-export default menuitems;
+export default React.memo(menuitems);

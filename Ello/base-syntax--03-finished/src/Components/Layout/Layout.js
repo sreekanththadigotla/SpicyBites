@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component, PureComponent } from 'react';
 import classes from './Layout.css';
 import { withRouter, Link, NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { logout } from '../Login/Auth';
 
-class Layout extends Component {
+class Layout extends PureComponent {
     
     state = {
         tokenCheck:this.props.token

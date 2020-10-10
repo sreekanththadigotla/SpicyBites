@@ -1,3 +1,5 @@
+ 
+
 
 const initialState = {
     // left:[{name:"biryani1","material":"indian","times":0,"price":25},{name:"biryani7","material":"indian","times":0,"price":25}
@@ -70,6 +72,7 @@ const reduer = (state = initialState, action) =>
               console.log(maintain);
               console.log(action.name.name);
                let up= maintain.filter((item,id) => {
+                 console.log(up)
                        
               if(item.name === action.name.name)
                 {   
@@ -105,13 +108,7 @@ const reduer = (state = initialState, action) =>
         let  pk=combinedArray.concat(state.left.concat(state.right.concat(state.center)));
               console.log("HHHHHHHHHHHHHHHHHHH");
               console.log(pk)
-        pk.map( obj =>{
-                if(obj.times>0)
-                {    
-                    
-                    leftArray.push(obj);
-                }
-          })
+        pk.map( obj =>{if(obj.times>0)  { leftArray.push(obj);}})
            state.totalPrice =0 ;
           leftArray.map(el => {
               let g = el.times * el.price;

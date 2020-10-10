@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, {  PureComponent } from 'react';
 import PersonalInput from '../../Components/Personalnput/Personalnput';
 import classes from './ContactData.css';
-import emailjs, { send } from 'emailjs-com';
+import emailjs from 'emailjs-com';
 
-class ContactData extends Component {
+class ContactData extends  PureComponent {
 
       state  ={
           orderForm:{

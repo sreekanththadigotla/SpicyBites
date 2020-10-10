@@ -1,11 +1,11 @@
-import React, {Component} from 'react';
+import React, { PureComponent} from 'react';
 import classes from './Login.css';
  
 import { connect } from 'react-redux';
 import { auths } from './Auth';
 import Spinner from '../utility/Spinner/Spinner';
-
-class Login extends Component {
+ 
+class Login extends PureComponent {
   
         
     state={
@@ -169,9 +169,12 @@ class Login extends Component {
       console.log("---------------------------------------------")
        console.log(this.props)
       if(this.props.error !==null)
-      { console.log("Correct")
+      { console.log("Correct")      
           errorMessage="Username or password is incorrect";
-      }
+
+          // eslint-disable-next-line no-unused-expressions
+          
+       }
                                         
 
         return(
@@ -181,7 +184,14 @@ class Login extends Component {
               <div className={classes.LoginMiddle}>
                   <span className={classes.Nextt}></span>
                   <div className={classes.Separate}>
+
+                  
                   <div className={classes.rr}>{errorMessage}</div> 
+                 
+               
+
+                
+                  
                   {pk}
                   </div>
               <button className={classes.Log} type="submit">{this.state.Login===true ? "Signup" : "Login"}</button>  
